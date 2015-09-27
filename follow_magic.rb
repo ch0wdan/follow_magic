@@ -46,11 +46,6 @@ get "/nav" do
   html
 end
 
-#
-def test_function
-  client = Instagram.client(:access_token => session[:access_token])
-end
-
 get "/user_recent_media" do
   client = Instagram.client(:access_token => session[:access_token])
   user = client.user
